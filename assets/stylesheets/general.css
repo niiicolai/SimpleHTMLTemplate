@@ -1,0 +1,51 @@
+* {
+  /*
+    Bestemmer hvordan et elements bredde og højde skal beregnes.
+    Default value er content-box: her beregnes bredde og højde kun på indhold,
+    border-box: her beregnes bredde og højde beregnes både på indhold, padding og margins.
+    Documentation: https://www.w3schools.com/css/css3_box-sizing.asp
+  */
+  box-sizing: border-box
+}
+
+body {
+  /*
+    En HTML sides body element har som default 8px margin,
+    hvilket skubber elementet 8 pixels fra alle sider.
+    For at vores indhold går helt ud til siden, sætter vi body margin til 0.
+    Documentation: https://www.w3schools.com/cssref/css_default_values.asp
+  */
+  margin: 0;
+}
+
+/* Heading default style */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+  color: #333;
+}
+
+/* Text default style */
+
+p, i, b, span {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+/* Hyperlink default style */
+
+a {
+  font-family: 'Roboto', sans-serif;
+}
+
+a, a:visited, a:active {
+  color: #36a2ec;
+}
+
+a:active {
+  color: #318dcc;
+}
+
+a.active {
+  color: #5cbdff;
+}

@@ -1,0 +1,149 @@
+.header {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: sticky;
+  box-shadow: 0px 3px 3px #333;
+  background: #fff;
+}
+
+.header,
+.intro-image,
+main {
+  border-bottom: 1px solid #333;
+}
+
+.header,
+.footer,
+main {
+  padding: 20px;
+}
+
+.footer {
+  text-align: center;
+}
+
+.header .header-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.header nav {
+  float: right;
+}
+
+.header nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.header nav ul li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.header nav ul li a {
+  display: block;
+  height: 100%;
+  padding: 11px;
+  text-decoration: none;
+}
+
+.header nav ul li a.active {
+  text-decoration: underline;
+}
+
+.header nav .mobile-btn {
+  cursor: pointer;
+  padding: 11px;
+  width: 48px;
+}
+
+.intro-image {
+  max-width: 100%;
+}
+
+.header nav ul li.mobile,
+.mobile {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+/*
+  320px — 480px: Mobile devices
+  481px — 768px: iPads, Tablets
+  769px — 1024px: Small screens, laptops
+  1025px — 1200px: Desktops, large screens
+  1201px and more —  Extra large screens, TV
+*/
+
+@media (max-width: 1201px) {
+
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 768px) {
+
+  .header nav ul li.mobile,
+  .mobile {
+    display: inherit;
+  }
+
+  .header nav ul {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 180px;
+    background: #fff;
+    border-left: 1px solid #333;
+  }
+
+  .header nav ul.show {
+    display: block;
+  }
+
+  .header nav ul li {
+    display: block;
+  }
+
+  .header nav ul li a,
+  .header nav ul li button {
+    border-bottom: 1px solid #333;
+    text-align: center;
+    width: 100%;
+  }
+
+  .header nav ul li button {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    cursor: pointer;
+    padding: 10px;
+    background: #fff;
+    color: #333;
+  }
+
+  .header nav ul li a:hover,
+  .header nav ul li button:hover {
+    background: #333;
+    color: #fff;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+}

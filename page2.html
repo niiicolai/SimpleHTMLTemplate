@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="da" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Include meta data, title, etc. below this line
+        - <meta charset> should be within the first 1024 bytes
+          and therefore is above this comment.
+    -->
+
+    <title>Insert title</title>
+
+    <link rel='shortcut icon' type='image/x-icon' href='./assets/images/no-image-favicon.ico'>
+
+    <!-- Check https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Include fonts, icons, etc. below this line -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Include stylesheets below this line -->
+    <link rel="stylesheet" href="./assets/stylesheets/general.css">
+    <link rel="stylesheet" href="./assets/stylesheets/layout.css">
+  </head>
+
+  <body>
+
+    <!-- Page Header:
+      - Include company logo
+      - Navigational links
+    -->
+
+    <header class="header">
+      <img src="./assets/images/no-image.svg" class="header-logo" alt="Company logo">
+
+      <nav id="menu">
+        <ul>
+          <li><a href="./index.html">Forside</a></li>
+          <li><a href="./page1.html">Side 1</a></li>
+          <li><a href="./page2.html" class="active">Side 2</a></li>
+          <li><a href="./page3.html">Side 3</a></li>
+          <li><a href="./page4.html">Side 4</a></li>
+          <li class="mobile"><button type="button" name="button" onclick="toggleMobile()">Close</button></li>
+        </ul>
+
+        <button type="button" name="button" class="mobile-btn mobile" onclick="toggleMobile()">☰</button>
+      </nav>
+
+
+    </header>
+
+    <img src="./assets/images/no-image-big.svg" class="intro-image" alt="Introducing image">
+
+    <!-- Page Main:
+      - Include content that are unique to this page
+    -->
+
+    <main>
+      <article>
+          <header>
+            <h1>Some Heading</h1>
+            <p>Additional information</p>
+          </header>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <img src="./assets/images/no-image.svg" alt="No image">
+      </article>
+    </main>
+
+    <!-- Page Footer:
+      - Include Copyright information, additional links, etc.
+    -->
+
+    <footer class="footer">
+      <p>Copyright 2021</p>
+    </footer>
+
+    <!-- Include javascript below this line -->
+    <script src="./assets/javascript/mobile.js"></script>
+  </body>
+</html>
